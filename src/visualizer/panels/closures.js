@@ -1,4 +1,4 @@
-import { sleep, logLine } from '../utils/ui.js';
+import { logLine } from '../utils/ui.js';
 
 export default {
   id: 'closures',

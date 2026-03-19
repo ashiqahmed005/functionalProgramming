@@ -104,10 +104,8 @@ const isOdd  = trampoline(isOdd_impl);</pre>
 
       const factImpl = (k, acc = 1) => k <= 1 ? acc : () => factImpl(k - 1, k * acc);
       const factorial = trampoline(factImpl);
-      let step = 0;
       for (let i = n; i >= 1; i--) {
         trampFrame.textContent = `loop: n=${i}, acc=${factorial}`;
-        step++;
         await sleep(120);
       }
       trampFrame.textContent = `done: ${factorial(n)}`;

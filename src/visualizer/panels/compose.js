@@ -74,7 +74,7 @@ slugify('  Hello World! '); <span class="c">// "hello-world"</span></pre>
       inputBubble.textContent = `"${input}"`;
       pipelineDiv.appendChild(inputBubble);
 
-      const fnBoxes = fns.map((f, i) => {
+      const fnBoxes = fns.map((f, _i) => {
         pipelineDiv.innerHTML += '<span class="pipe-arrow">→</span>';
         const box = document.createElement('div');
         box.className = 'fn-box';

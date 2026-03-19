@@ -9,6 +9,7 @@ export default [
       globals: {
         window:    'readonly',
         document:  'readonly',
+        Event:     'readonly',
         console:   'readonly',
         setTimeout:'readonly',
         clearTimeout: 'readonly',
